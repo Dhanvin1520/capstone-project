@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #fbf8f8;
+  }
+  
+
+  header {
+    background: #fbf8f8;
+    color: #070707;
+    padding:20px;
+    font-family: 'Domine', serif;
+  }
+  main{
+    display:flex;
+    flex-direction: column;
+  }
+  main h2{
+    font-family: 'Domine', serif;
+  }
+  .navbar {
+    display:flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1.5px;
+  }
+  
+  
+  .subnav{
+    padding: 10px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #131212;
+    font-weight: bold;
+    font-family: Domine;
+    
+  }
+  .subnav:hover{
+    color:#fc8f00
+  }
+
+  .yellow{
+    text-align: center;
+    border-bottom: 1.5px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    gap: 48px;
+
+  }
+  .Discover {
+    display: flex;
+    flex-direction: column;
+    font-family:Domine;
+    font-size: 120px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .mainimage img{
+
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5%;
+  }
+  .image img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  .image img:hover {
+    transform: scale(0.9);
+    box-shadow: 2px 4px 2px 3px #010101;
+  }
+
+  
+  .allimages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .image p {
+    font-size: 17px;
+    color: #555;
+    text-align: start;
+    font-family:'Outfit', sans-serif;
+  }
+  .image p1{
+    font-size: 10px;
+    font-family:'Outfit', sans-serif;
+    color: #ea1111;
+    text-align:left;
+  }
+  
+  .chair {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .chair img {
+    width: 50%;
+    border-radius: 5px;
+  }
+  
+  .chair-text {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .chair-text h1{
+    padding: 10px;
+    font-family:'Outfit', sans-serif;
+    
+  }
+  .chair-text h4{
+    font-weight: lighter;
+    padding: 10px;
+    font-family:'Outfit', sans-serif;
+
+  }
+  button{
+    padding: 10px;
+  }
+  .chair-text button {
+    padding: 5px 5px ;
+    width: 100px;
+    background: rgb(218, 187, 169);
+    color: #0e0e0e;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  footer {
+    padding: 20px;
+    background: #ffffff;
+    color: #0c0c0c;
+  }
+  .inquiries{
+    text-align:end;
+    font-family:'Outfit', sans-serif;
+    font-weight: lighter;
+  }
+  .contact-section{
+    gap: 60px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+  .contact-section h2{
+    font-family:'Outfit', sans-serif;
+    
+  }
+  .follow{
+    padding-top: 60px;
+    text-align: center;
+    font-family:'Outfit', sans-serif;
+  }
+  .email{
+    padding-top: 9px;
+    text-align: center;
+  }
+  .email input {
+    
+    padding:8px;
+    border: none;
+    background-color: #dee1e7;
+    border-radius: 5px;
+    width: 200px;
+    font-family:'Outfit', sans-serif;
+  }
+  .email button {
+    
+    padding: 9px 10px;
+    border: none;
+    background: rgb(218, 187, 169);
+    cursor: pointer;
+    border-radius: 5px;
+    font-family:'Outfit', sans-serif;
+  }
+  .social-media{
+    text-align: center;
+    padding-top: 30px;
+    font-family:'Outfit', sans-serif;
+  }
+  
+  .social-media a {
+    color: rgb(20, 20, 19);
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  .copyright{
+    padding-top: 30px;
+    text-align: left;
+    font-family:'Outfit', sans-serif;
+  }
+  @media screen and (max-width: 600px) {
+    .subnav {
+        display: none !important;
+    }
+
+    .navbar h1 {
+        text-align: center;
+        padding: 200px;
+    }
+
+    .Discover {
+        font-size: 60px;
+        text-align: center;
+        padding: 20px;
+    .chair-text h1{
+      font-size: medium;
+    }
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    
+
+    .Discover {
+        font-size: 80px;
+    }
+
+    .navbar h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 1025px) {
+
+    .Discover {
+        font-size: 120px;
+    }
+    .navbar h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .chair-text h1{
+      font-size: 120px;
+    }
+    .chair-text h4{
+      font-size: 50px;
+    }
+    .DiscoverMore{
+      width: 1000px;
+      height:50px ;
+      margin-left: 20px;
+    }
+    
+
+}
