@@ -19,7 +19,7 @@
     display:flex;
     flex-direction: column;
   }
-  main h2{
+  main h2 {
     font-family: 'Domine', serif;
   }
   .navbar {
@@ -40,7 +40,7 @@
     text-decoration: none;
     color: #131212;
     font-weight: bold;
-    font-family: Domine;
+    font-family: 'Domine', serif;
     
   }
   .subnav:hover{
@@ -58,7 +58,7 @@
   .Discover {
     display: flex;
     flex-direction: column;
-    font-family:Domine;
+    font-family: 'Domine', serif;
     font-size: 120px;
     text-align: center;
     flex-wrap: wrap;
@@ -251,17 +251,36 @@
         font-size: 32px;
         text-align: center;
     }
-    .chair-text h1{
-      font-size: 120px;
-    }
-    .chair-text h4{
-      font-size: 50px;
-    }
-    .DiscoverMore{
-      width: 1000px;
-      height:50px ;
-      margin-left: 20px;
-    }
+    
     
 
+}
+@media screen and (max-width: 480px) {
+  .navbar h1 {
+      font-size: 24px;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .Discover {
+      font-size: 48px;
+      text-align: center;
+      padding: 10px;
+  }
+
+  
+}
+
+@media screen and (max-width: 360px) {
+  .navbar h1 {
+      font-size: 20px;
+      padding: 10px;
+  }
+
+  .Discover {
+      font-size: 36px;
+      text-align: center;
+  }
+
+  
 }
