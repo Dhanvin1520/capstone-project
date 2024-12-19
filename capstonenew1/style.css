@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -13,14 +15,14 @@
     background: #fbf8f8;
     color: #070707;
     padding:20px;
-    font-family: 'Domine', serif;
+    font-family: "Domine", serif;
   }
   main{
     display:flex;
     flex-direction: column;
   }
   main h2 {
-    font-family: 'Domine', serif;
+    font-family: "Domine", serif;
   }
   .navbar {
     display:flex;
@@ -40,7 +42,7 @@
     text-decoration: none;
     color: #131212;
     font-weight: bold;
-    font-family: 'Domine', serif;
+    font-family: "Domine", serif;
     
   }
   .subnav:hover{
@@ -58,7 +60,9 @@
   .Discover {
     display: flex;
     flex-direction: column;
-    font-family: 'Domine', serif;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 120px;
     text-align: center;
     flex-wrap: wrap;
@@ -100,6 +104,10 @@
     font-family:'Outfit', sans-serif;
     color: #ea1111;
     text-align:left;
+  }
+  .vintage{
+    font-weight: lighter;
+    font-size: small;
   }
   
   .chair {
@@ -149,12 +157,9 @@
     background: #ffffff;
     color: #0c0c0c;
   }
-  .inquiries{
-    text-align:end;
-    font-family:'Outfit', sans-serif;
-    font-weight: lighter;
-  }
   .contact-section{
+    display: flex;
+    justify-content: space-between;
     gap: 60px;
     padding-top: 52px;
     padding-bottom: 52px;
@@ -162,6 +167,11 @@
   .contact-section h2{
     font-family:'Outfit', sans-serif;
     
+  }
+  .contact-section p{
+    font-family:'Outfit', sans-serif;
+    text-align: end;
+
   }
   .follow{
     padding-top: 60px;
@@ -202,10 +212,27 @@
     text-decoration: none;
   }
   .copyright{
-    padding-top: 30px;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 9px;
     font-family:'Outfit', sans-serif;
+    
   }
+  .copyrights{
+    display:flex;
+    justify-content: space-between;
+  }
+  .lastsection{
+    display: flex;
+    padding: 7px;
+    justify-content: space-between;
+    border:1px solid rgb(67, 63, 63);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
   @media screen and (max-width: 600px) {
     .subnav {
         display: none !important;
