@@ -41,8 +41,9 @@
   .navbar a {
     text-decoration: none;
     color: #131212;
-    font-weight: bold;
+    font-weight: lighter;
     font-family: "Domine", serif;
+
     
   }
   .subnav:hover{
@@ -107,12 +108,13 @@
   }
   .vintage{
     font-weight: lighter;
-    font-size: small;
+    font-size: 5px;
   }
   
   .chair {
     display: flex;
     flex-direction: row;
+    gap:40px;
     align-items: center;
     padding: 20px;
     background-color: #f5f5f5;
