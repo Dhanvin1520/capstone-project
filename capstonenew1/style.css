@@ -337,9 +337,7 @@ footer {
         gap: 0;
     }
 
-    .chair img { /* Fixed selector here */
-        width: auto;
-    }
+    
 
     .chair-text {
         font-size: small;
