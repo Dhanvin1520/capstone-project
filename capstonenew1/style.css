@@ -249,19 +249,22 @@
     .subnav {
         display: none !important;
     }
+    .navbar{
+      justify-content:center;
+    }
+
+  
 
     .navbar h1 {
-        text-align: center;
-        padding: 200px;
+        text-align:center;
+        padding:200px;
+        margin: 0%;
     }
 
     .Discover {
         font-size: 60px;
         text-align: center;
         padding: 20px;
-    .chair-text h1{
-      font-size: medium;
-    }
     }
 }
 
@@ -309,17 +312,44 @@
 
   
 }
-
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 460px) and (max-width: 600px) {
   .navbar h1 {
-      font-size: 20px;
-      padding: 10px;
-  }
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
 
-  .Discover {
-      font-size: 36px;
-      text-align: center;
-  }
+.Discover {
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+}
 
-  
+
+}
+@media screen and (min-width: 310px) and (max-width: 450px) {
+  .navbar h1 {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.Discover {
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+}
+.chair{
+  gap:0;
+
+
+}
+.chair image{
+  width: auto;
+}
+.chair-text{
+  font-size: small;
+}
+
+
 }
