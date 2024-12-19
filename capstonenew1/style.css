@@ -8,8 +8,18 @@
 
 body {
     background: #fbf8f8;
+    animation: fadeIn 2s ease-in-out;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
+  
 header {
     background: #fbf8f8;
     color: #070707;
@@ -24,7 +34,17 @@ main {
 
 main h2 {
     font-family: "Domine", serif;
+    animation: bounce 3s ;
+    
 }
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 
 .navbar {
     display: flex;
