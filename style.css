@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fbf8f8;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+header {
+    background: #fbf8f8;
+    color: #070707;
+    padding: 1.25rem;
+    font-family: "Domine", serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    font-family: "Domine", serif;
+    animation: bounce 3s ;
+    
+}
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+.navbar {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.094rem;
+}
+
+.subnav {
+    padding: 0.625rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #131212;
+    font-weight: lighter;
+    font-family: "Domine", serif;
+}
+
+.subnav:hover {
+    color: #fc8f00;
+}
+
+.yellow {
+    text-align: center;
+    border-bottom: 0.094rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    gap: 3rem;
+}
+
+.Discover {
+    display: flex;
+    flex-direction: column;
+    font-family: "Domine", serif;
+    font-size: 7.5rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.mainimage img {
+    display: flex;
+    width: 100%;
+    padding: 1.25rem;
+    border-radius: 0.3125rem;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 0.3125rem;
+    transition: transform 0.3s ease;
+}
+
+.image img:hover {
+    transform: scale(0.9);
+    box-shadow: 0.125rem 0.25rem 0.125rem 0.1875rem #010101;
+}
+
+.allimages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.625rem;
+    padding: 1.25rem;
+    background-color: #fff;
+}
+
+.image p {
+    font-size: 1.0625rem;
+    color: #555;
+    text-align: start;
+    font-family: 'Outfit', sans-serif;
+}
+
+.vintage {
+    font-weight: lighter;
+    font-size: 0.3125rem;
+}
+
+.chair {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 1.25rem;
+    background: linear-gradient(to bottom,#fff, #FDFCFC);
+}
+
+.chair img {
+    width: 50%;
+    border-radius: 0.3125rem;
+    animation: jump 1.5s infinite ease-in-out;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3.125rem);
+    }
+}
+
+.chair-text {
+    margin-left: 1.875rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.chair-text h1 {
+    padding: 0.625rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.chair-text h4 {
+    font-weight: lighter;
+    padding: 0.625rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+button {
+    padding: 0.625rem;
+}
+
+.chair-text button {
+    padding: 0.3125rem 0.3125rem;
+    width: 6.25rem;
+    background: rgb(218, 187, 169);
+    color: #0e0e0e;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+}
+
+footer {
+    padding: 1.25rem;
+    background: #ffffff;
+    color: #0c0c0c;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.75rem;
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+}
+
+.contact-section h2 {
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-section p {
+    font-family: 'Outfit', sans-serif;
+    text-align: end;
+}
+
+.follow {
+    padding-top: 3.75rem;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.email {
+    padding-top: 0.5625rem;
+    text-align: center;
+}
+
+.email input {
+    padding: 0.5rem;
+    border: none;
+    background-color: #dee1e7;
+    border-radius: 0.3125rem;
+    width: 12.5rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.email button {
+    padding: 0.5625rem 0.625rem;
+    border: none;
+    background: rgb(218, 187, 169);
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.social-media {
+    text-align: center;
+    padding-top: 1.875rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.social-media a {
+    color: rgb(20, 20, 19);
+    margin: 0 0.03125rem;
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 0.5625rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastsection {
+    display: flex;
+    padding: 0.4375rem;
+    justify-content: space-between;
+    border: 0.0625rem solid rgb(67, 63, 63);
+    border-radius: 0.625rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .subnav {
+        display: none !important;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar h1 {
+        text-align: center;
+        padding: 12.5rem;
+        margin: 0%;
+    }
+
+    .Discover {
+        font-size: 3.75rem;
+        text-align: center;
+        padding: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 37.5625rem) and (max-width: 64rem) {
+    .Discover {
+        font-size: 5rem;
+    }
+
+    .navbar h1 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 64.0625rem) {
+    .Discover {
+        font-size: 7.5rem;
+    }
+
+    .navbar h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    .navbar h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1.25rem;
+    }
+
+    .Discover {
+        font-size: 3rem;
+        text-align: center;
+        padding: 0.625rem;
+    }
+}
+
+@media screen and (min-width: 28.75rem) and (max-width: 37.5rem) {
+    .navbar h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1.25rem;
+    }
+
+    .Discover {
+        font-size: 3rem;
+        text-align: center;
+        padding: 0.625rem;
+    }
+}
+
+@media screen and (min-width: 19.375rem) and (max-width: 28.125rem) {
+    .navbar h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1.25rem;
+    }
+
+    .Discover {
+        font-size: 3rem;
+        text-align: center;
+        padding: 0.625rem;
+    }
+
+    .chair {
+        gap: 0;
+    }
+
+    
+
+    .chair-text {
+        font-size: small;
+    }
+}
